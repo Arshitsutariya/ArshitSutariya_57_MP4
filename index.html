@@ -1,0 +1,183 @@
+﻿<html>
+
+<head>
+  <title>Country card</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background:#80b3ff;
+      color: #80b3ff;
+      font-size: 1.1em;
+      line-height: 1.5;
+      text-align: center;
+      background-image: cross-fade();
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    
+    h1,
+    h2,
+    h3 {
+      margin: 0;
+      padding: 1em 0;
+    }
+    p {
+      margin: 0;
+      padding: 1em 0;
+    }
+    #showcase {
+      min-height: 450px;
+      color: rgb(16, 24, 26);
+      text-align: center;
+    }
+    #showcase .bg-image {
+      position: absolute;
+      background: #809fff;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 450px;
+      z-index: -1;
+    }
+
+    #showcase h1 {
+      padding-top: 100px;
+      padding-bottom: 0;
+    }
+
+    #showcase .content-wrap,
+    #section-a .content-wrap {
+      padding: 0 1.5em;
+    }
+
+    #section-a {
+      background: rgb(58, 27, 34);
+      color: rgb(156, 133, 133);
+      padding-bottom: 2em;
+    }
+
+    #section-b ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    #section-b li {
+      background: rgb(177, 164, 164);
+      color: rgba(63, 33, 46, 0.904);
+    }
+
+    #section-c {
+      background: rgb(58, 27, 34);
+      color: rgb(156, 133, 133);
+      padding: 2em;
+    }
+
+    @media (min-width: 700px) {
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+      }
+
+      #section-a .content-text {
+        columns: 2;
+        column-gap: 2em;
+      }
+
+      #section-a .content-text p {
+        padding-top: 0;
+      }
+
+      .content-wrap,
+      #section-b ul {
+        grid-column: 2/4;
+      }
+
+      .box,
+      #main-footer div {
+        grid-column: span 2;
+      }
+
+      #section-b ul {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      #section-b li {
+        width: 31%;
+      }
+    }
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <header id="showcase" class="grid">
+    <div class="bg-image"></div>
+    <div class="content-wrap">
+      <h1>Welcome to My Movie Blog</h1>
+      <p>A film, also called a movie, motion picture or moving picture, is a work of visual art used to simulate experiences that communicate ideas, stories, perceptions, feelings, beauty, or atmosphere through the use of moving images. These images are generally accompanied by sound, and more rarely, other sensory stimulations.
+          The word "cinema", short for cinematography, is often used to refer to filmmaking and the film industry, and to the art form that is the result of it.</p>
+
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section id="section-a" class="grid">
+      <div class="content-wrap">
+        <h2 class="content-title">Movies For Movie Lover</h2>
+        <div class="content-text">
+          <p>Traditionally, films were recorded onto celluloid film stock through a photochemical process and then shown through a movie projector onto a large screen. Contemporary films are often fully digital through the entire process of production, distribution, and exhibition, while films recorded in a photochemical form traditionally included an analogous optical soundtrack (a graphic recording of the spoken words, music and other sounds that accompany the images which runs along a portion of the film exclusively reserved for it, and is not projected).</p>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="section-b" class="grid">
+      <ul>
+        <li>
+          <div class="card">
+            <img src="images/i1.jpg" alt="">
+            <div class="card-content">
+              <h3 class="card-title">Bollywood movie</h3>
+              <p> Hindi cinema, often known as Bollywood and formerly as Bombay cinema,[5] is the Indian Hindi-language film industry based in Mumbai (formerly Bombay). The term is a portmanteau of "Bombay" and "Hollywood". The industry is related to Cinema of South India and other Indian film industries, making up Indian Cinema—the world's largest by number of feature films produced.</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="card">
+            <img src="images/i2.jpg" alt="">
+            <div class="card-content">
+              <h3 class="card-title">Tollywood</h3>
+              <p>Telugu cinema, often known as Tollywood, is the segment of Indian cinema dedicated to the production of motion pictures in the Telugu language, widely spoken in the states of Andhra Pradesh and Telangana. Telugu cinema is based in Film Nagar, a neighborhood of Hyderabad, India.[5] Since 1909, filmmaker Raghupathi Venkaiah was involved in producing short films and travelling to different regions in Asia to promote film work. In 1921, he produced the silent film, Bhishma Pratigna. He is cited as the father of Telugu cinema.</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="card">
+            <img src="images/i3.jpg" alt="">
+            <div class="card-content">
+              <h3 class="card-title">Hollywood</h3>
+              <p>The cinema of the United States has had a large effect on the film industry in general since the early 20th century. The dominant style of American cinema is the classical Hollywood cinema, which developed from 1913 to 1969 and characterizes most films made there to this day. While Frenchmen Auguste and Louis Lumière are generally credited with the birth of modern cinema,[6] American cinema soon came to be a dominant force in the emerging industry.</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section id="section-c" class="grid">
+      <div class="content-wrap">
+        <h2 class="content-title">Designed By Arshit sutariya</h2>
+
+      </div>
+    </section>
+
+</body>
+
+</html>
